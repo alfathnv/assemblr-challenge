@@ -1,8 +1,8 @@
 import React from 'react'
 import { auth } from "../../firebase-config";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import "./index.scss";
 import GoogleButton from '../../components/GoogleButton';
+import "./index.scss";
 
 function Login() {
   const signInWithGoogle = () => {
@@ -30,7 +30,11 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className='login-wrapper'>
+      <div className='title-image'>
+        <img src='https://uploads-ssl.webflow.com/5b7529a016d8f2576dc56a91/5f1a3ab94962de0eb3c51d4a_logotype-01.svg' alt='assemblr logo'></img>
+        <h1>CHALLENGE.</h1>
+      </div>
       <GoogleButton sign_in={signInWithGoogle}/>
     </div>
   )
