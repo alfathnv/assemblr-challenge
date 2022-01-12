@@ -41,6 +41,20 @@ header {
     justify-content: right;
     height: 80px; 
     text-decoration: none;
+    gap: 50px;
+    .link i {
+      padding-right: 5px;
+    }
+    .link:link, .link:visited {
+      color: rgba(255, 255, 255, .65);
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .25s;
+    }
+    .link:hover, .link:active {
+      color: #bb86fc;
+    }
     button {
       background-color: transparent ;
       border: white solid 2px;
