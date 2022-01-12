@@ -11,27 +11,46 @@
   .home-title {
     font-size: 50px;
   }
-  .movie-card {
-    width: 800px;
-    border-radius: 20px;
-    background-color: #1d1d1d;
-    padding: 30px 30px;
-    .title {
-      font-size: 25px;
-      word-wrap: break-word;
-      color: #bb86fc;
+  .banner-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 300px;
     }
-    .image {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-    .desc {
-      font-size: 15px;
-      word-wrap: break-word;
-    }
+    .content {
+      padding: 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      flex-direction: column;
+    } 
   }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .card {
+      border: none;
+      width: 300px;
+      height: 450px;
+      transition: all .5s;
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        width: 100%;
+      }
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  } 
   .pagination {
     height: 100%;
     position: fixed;
@@ -42,7 +61,7 @@
     flex-direction: column;
     gap: 20px;
     bottom: 0;
-    right: 120px;
+    right: 60px;
     a {
       padding: 0px 15px;
       border-radius: 5px;
