@@ -21,7 +21,6 @@ function Detail() {
         <p className='ref'>Firebase Auth : <a href='https://firebase.google.com/docs/auth'>https://firebase.google.com/docs/auth</a></p>
         <p className='ref'>Firebase Realtime Database : <a href='https://firebase.google.com/docs/database'>https://firebase.google.com/docs/database</a></p>
         <p className='ref'>Firebase Hosting : <a href='https://firebase.google.com/docs/hosting'>https://firebase.google.com/docs/hosting</a></p>
-
       </div>
     </div>
   )

@@ -16,7 +16,6 @@
     border-radius: 20px;
     background-color: #1d1d1d;
     padding: 30px 30px;
-    
     .title {
       font-size: 25px;
       word-wrap: break-word;
@@ -63,5 +62,40 @@
   .pagination-disabled a {
     color: grey;
     background-color: grey;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-wrapper {
+    padding: 80px 0px;
+    gap: 10px;
+    .home-title {
+      font-size: 25px;
+    }
+    .movie-card {
+      width: 300px;
+      border-radius: 10px;
+      padding: 10px 10px;
+      .title {
+        font-size: 15px;
+      }
+      .date {
+        font-size: 10px;
+      }
+      .desc {
+        font-size: 10px;
+      }
+    }
+    .pagination {
+      position:static;
+      flex-direction: row;
+      gap: 5px;
+      padding-left: 0;
+      a {
+        padding: 2px 5px;
+        border-radius: 2px;
+        font-size: 10px;
+      }
+    }
   }
 }

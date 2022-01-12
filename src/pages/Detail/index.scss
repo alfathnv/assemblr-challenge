@@ -45,3 +45,48 @@
     
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .detail-wrapper {
+    .title-image {
+      filter: invert(100%);
+      transition: all .5s;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+        transition: all .5s;
+      }
+    }
+    .desc {
+      color: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        color: #bb86fc;
+        
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .number {
+        font-weight: 500;
+        font-size: 11px;
+        padding-left: 10px;
+      }
+      .ref {
+        font-size: 12px;
+        
+      }
+      
+    }
+  }
+}

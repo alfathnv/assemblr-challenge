@@ -28,7 +28,7 @@ function Home() {
   const displayData = data
   .slice(pagesVisited, pagesVisited + dataPerPage)
   .map((movie) =>
-        <div className='movie-card' key={movie.toString()}>
+        <div className='movie-card' key={movie.id}>
           <h2 className='title'>{movie.movie_title}</h2>
           <p className='date'>( {movie.date} )</p>
           <img className='image' src={movie.movie_image} alt={data[0].movie_title} />
@@ -46,7 +46,7 @@ function Home() {
     <div className='home-wrapper'>
       <h1 className='home-title'>Movie List</h1>
       {displayData}
-      <ReactPaginate 
+      <div><ReactPaginate 
         previousLabel={"Prev"}
         nextLabel={"Next"}
         pageCount={pageCount}
@@ -56,7 +56,8 @@ function Home() {
         nextLinkClassName={"next-btn"}
         disabledClassName={"pagination-disable"}
         activeClassName={"pagination-active"}
-      />
+      /></div>
+      
     </div>
   )
 }

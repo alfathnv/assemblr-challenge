@@ -9,7 +9,6 @@ header {
   align-items: center;
   z-index: 101;
   .left-wrapper {
-    color: crimson;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -35,7 +34,6 @@ header {
     }
   }
   .right-wrapper {
-    color: crimson;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -75,9 +73,38 @@ header {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0px 10px;
+    height: 80px;
+    font-size: 12px;
+    .left-wrapper {
+      h1 {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .link {
+        margin-right: 6px;
+      }
+    }
+    .right-wrapper {
+      height: 80px; 
+      gap: 10px;
+      .link {
 
-// @media screen and (max-width: 992px) {
-//   header {
-//     font-size: 12px;
-//   }
-// }
+      }
+      .link {
+        font-size: 12px;
+        i {
+          display: none;
+        }
+      }
+      button {
+        border-radius: 3px;
+        padding: 6px 4px;
+        font-size: 8px;
+        margin: 4px 2px;
+      }
+    }
+  }
+}
