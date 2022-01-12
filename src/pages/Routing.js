@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
+  Route
 } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Login from './Login';
@@ -12,10 +12,10 @@ import {auth} from "../firebase-config"
 
 const Routing = () => {
   const [isUserSignedIn, setIsUserSignedIn] = useState(true);
-
+  
   auth.onAuthStateChanged((user) => {
     if (user) {
-      return setIsUserSignedIn(false);
+      return setIsUserSignedIn(true);
     } 
     setIsUserSignedIn(false);
   })
