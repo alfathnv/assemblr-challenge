@@ -1,9 +1,11 @@
 import React from 'react';
 import './index.scss';
 import { Link } from "react-router-dom";
-
+import { signOutGoogle } from '../../google-auth';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <header>
       <div className='left-wrapper'>
@@ -15,6 +17,7 @@ function Navbar() {
         </Link>
       </div>
       
+      {/* <button onClick={() => signOutGoogle(navigate)}></button> */}
       <div className="right-wrapper">
       </div>
     </header>

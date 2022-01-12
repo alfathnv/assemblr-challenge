@@ -1,13 +1,13 @@
 .home-wrapper {
-  margin-top: 100px;
+  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
   .home-title {
     font-size: 50px;
   }
@@ -16,6 +16,7 @@
     border-radius: 20px;
     background-color: #1d1d1d;
     padding: 30px 30px;
+    
     .title {
       font-size: 25px;
       word-wrap: break-word;
@@ -30,5 +31,39 @@
       font-size: 15px;
       word-wrap: break-word;
     }
+  }
+  .pagination {
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    bottom: 0;
+    right: 100px;
+    a {
+      padding: 0px 15px;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  
+  .pagination a:hover {
+    color: white;
+    background-color: #bb86fc;
+  }
+  
+  .pagination-active a {
+    color: white;
+    background-color: #bb86fc;
+  }
+  
+  .pagination-disabled a {
+    color: grey;
+    background-color: grey;
   }
 }
