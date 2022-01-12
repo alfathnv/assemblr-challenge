@@ -1,0 +1,47 @@
+.detail-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title-image {
+    filter: invert(100%);
+    transition: all .5s;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin: 0;
+      transition: all .5s;
+    }
+  }
+  .desc {
+    color: rgba(255, 255, 255, 0.9);
+    width: 50%;
+    h1 {
+      text-align: center;
+      color: #bb86fc;
+    }
+    .number {
+      padding-left: 20px;
+    }
+    .ref a {
+      &:link, &:visited {
+        color: #bb86fc;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .25s;
+      }
+      &:hover, &:active {
+        color: white;
+      }
+    }
+    
+  }
+}

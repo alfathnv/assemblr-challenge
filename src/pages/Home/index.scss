@@ -1,5 +1,5 @@
 .home-wrapper {
-  margin: 100px 0px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,7 @@
     .title {
       font-size: 25px;
       word-wrap: break-word;
+      color: #bb86fc;
     }
     .image {
       display: block;
@@ -42,7 +43,7 @@
     flex-direction: column;
     gap: 20px;
     bottom: 0;
-    right: 100px;
+    right: 120px;
     a {
       padding: 0px 15px;
       border-radius: 5px;
@@ -51,17 +52,14 @@
       cursor: pointer;
     }
   }
-  
   .pagination a:hover {
     color: white;
     background-color: #bb86fc;
   }
-  
   .pagination-active a {
     color: white;
     background-color: #bb86fc;
   }
-  
   .pagination-disabled a {
     color: grey;
     background-color: grey;

@@ -44,7 +44,6 @@ function Home() {
 
   return (
     <div className='home-wrapper'>
-      
       <h1 className='home-title'>Movie List</h1>
       {displayData}
       <ReactPaginate 
