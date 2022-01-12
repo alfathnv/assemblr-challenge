@@ -32,11 +32,12 @@
   .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     .card {
       border: none;
       width: 300px;
-      height: 450px;
       transition: all .5s;
       .image {
         display: block;
@@ -84,27 +85,56 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .home-wrapper {
     padding: 80px 0px;
     gap: 10px;
     .home-title {
       font-size: 25px;
     }
-    .movie-card {
-      width: 300px;
-      border-radius: 10px;
-      padding: 10px 10px;
-      .title {
-        font-size: 15px;
+    .banner-wrapper {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 250px;
       }
-      .date {
-        font-size: 10px;
-      }
-      .desc {
-        font-size: 10px;
-      }
+      .content {
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        gap: 2px;
+        .title {
+          font-size: 20px;
+        }
+        .desc {
+          text-justify: auto;
+          font-size: 10px;
+        }
+      } 
     }
+    .content {
+      display: flex;
+      
+      flex-wrap: wrap;
+      gap: 20px;
+      .card {
+        border: none;
+        width: 40%;
+        transition: all .5s;
+        .image {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    } 
     .pagination {
       position:static;
       flex-direction: row;
