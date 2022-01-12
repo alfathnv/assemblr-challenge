@@ -19,7 +19,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="right-wrapper">
-        <a className='link' href='https://github.com/alfathnv'><i class="fa fa-github"></i>Repo</a>
+        <a className='link' href='https://github.com/alfathnv/assemblr-challenge'><i className="fa fa-github"></i>Repo</a>
         <button onClick={() => signOutGoogle(navigate)}>Sign Out</button>
       </div>
     </header>

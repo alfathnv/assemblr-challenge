@@ -4,15 +4,17 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import { Navigate } from 'react-router-dom'
 import Navbar from "../components/Navbar";
 import Login from './Login';
 import Home from './Home';
 import Detail from './Detail';
 import {auth} from "../firebase-config"
+import { isAuth } from '../google-auth';
 
 const Routing = () => {
   const [isUserSignedIn, setIsUserSignedIn] = useState(true);
-  
+
   auth.onAuthStateChanged((user) => {
     if (user) {
       return setIsUserSignedIn(true);
@@ -25,8 +27,8 @@ const Routing = () => {
       <Router>
         <Navbar></Navbar>
           <Routes>
-            <Route path='/detail' element={<Detail/>} />
-            <Route path='/home' element={<Home/>} />
+            <Route path='/detail' element={<Detail />} />
+            <Route path='/home' element={<Home />} />
           </Routes>
       </Router>
     );
@@ -34,7 +36,7 @@ const Routing = () => {
     return (
       <Router>
           <Routes>
-            <Route path='/' element={<Login/>} />
+            <Route path='/' element={<Login />} />
           </Routes>
       </Router>
     );

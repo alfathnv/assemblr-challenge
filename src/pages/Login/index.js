@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import "./index.scss";
 
 function Login() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className='login-wrapper'>

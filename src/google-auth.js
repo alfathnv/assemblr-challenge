@@ -22,7 +22,6 @@ const signInWithGoogle = (navigate) => {
 const signOutGoogle = (navigate) => {
   signOut(auth).then(() => {
     navigate('/');
-    
   }).catch((error) => {
   });
 }
