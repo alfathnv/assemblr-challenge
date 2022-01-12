@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+<<<<<<< HEAD
     width: 90%;
     padding: 10px;
     height:40%;
@@ -47,6 +48,15 @@
     }
     .content {
       padding: 0 10px;
+=======
+    width: 85%;
+    img {
+      width: 150px;
+      border-radius: 10px 0 0 10px;
+    }
+    .content {
+      padding: 0 40px;
+>>>>>>> 82f647e18c47fa3fac44a3bb66c417211080e837
       display: flex;
       flex-direction: column;
       .title {
